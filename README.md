@@ -34,8 +34,6 @@ These are required in the host environment to run the `prepare_sdk.sh` script, b
 
 # Temporary solution! #
 The best solution would be to modify the docker image to use ubuntu 22.04 (or whatever latest build environment) then attempt compilation and fix all issues that come up.
-This has briefly been tried, but the code base is out of date WRT to openSSL, including the correct header files and some other warnings.
-If someone who knows how to use CMake were to disable the compiler warnings as errors, then it would mainly build.  There is some issue with an openSSL structure too.
 
 ## Progress ##
 Initial tests have confirmed that updating to 22.04 is more complex than changing the docker base image for the build environment to 22.04 and updating the dependency repositories to 'latest'.
